@@ -74,7 +74,7 @@ func (face *YoutuEngine) Detect() {
 		return
 	}
 
-	df, err := face.yt.DetectFace(imgData, false, 0)
+	df, err := face.yt.DetectFace(imgData, false)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "DetectFace() failed: %s", err)
 		return
