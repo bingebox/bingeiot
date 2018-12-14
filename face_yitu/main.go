@@ -201,7 +201,7 @@ func searchFaceList(sessionID string) {
 	log.Println(string(resp.Bytes()))
 }
 
-func main() {
+func _main() {
 	flag.Parse()
 
 	sessionID := login()
